@@ -1,0 +1,103 @@
+html{
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: cover;
+    width: auto;
+}
+
+body{
+    font-size: 1rem;    
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+.card{
+    background-color: white;
+    border-radius: 10px; 
+    width: 20%;
+    margin: 20vh auto;
+}
+
+.top-image {
+    width: 100%;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.top-container{
+    text-align: center;
+}
+#paragaph1 {
+    padding: 20px;
+    margin: auto;
+    width: 70%;
+}
+
+.middle-container{
+    align-items: center;
+    display: flex;
+    margin: auto;
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.music-image{
+    height: auto;
+    width: 60px;
+    padding: 10px;
+}
+
+#music{
+    display: flex;
+}
+#change{
+    justify-self: right;
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    margin: 20px 20px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bold;
+    box-shadow:3px 3px 3px black;
+}
+
+button:hover{
+    background-color: hsl(224, 23%, 55%);
+    box-shadow:1px 1px 1px black;
+}
+
+@media (min-width: 375px) {
+    html{
+        background-image: unset;
+        font-size:0.8rem ;
+    }
+    .card{
+        width: 80%;
+    }
+    .middle-container{
+        width: 80%;
+    }
+}
+ @media (min-width:1440px){
+    html{
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-image: unset;
+        font: size 1rem ;
+    }
+    .card{
+        width: 20%;
+    }
+    .middle-container{
+        width: 80%;
+    }
+}
